@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <form method="post" action="?php$_SERVER['PHP_SELF'];?.>">
+        <h1>Registration Form</h1>
+        <label>First Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="fname" size="50">
+        <br>
+        <br>
+        <label>Middle Name:</label>
+        <input type="text" name="Mname" size="50">
+        <br>
+        <br>
+        <label>Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="Lname" size="50">
+        <br>
+        <br>
+        <label>Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Other">Other
+        <br>
+        <br>
+        <br>
+        <label>Course&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select name="course">
+            <option value="course">Course</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="BCOM">BCOM</option>
+            <option value="B.Tech">B.Tech</option>
+        </select>
+        <br><br>
+        <label>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <textarea cols="40" rows="5" name="add"></textarea>
+        <br><br>
+        <label>E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input type="text" name="country code" value="+91" size="2">
+        <input type="text" name="phone" size="10">
+        <br><br>
+        <label>Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <label>
+            <input type="submit" name="submit" value="submit">
+            <input type="reset" name="reset" value="reset">
+    </form>
+    <?php
+$firstname=$_POST["fname"];
+$middlename=$_POST["mname"];
+$lastname=$_POST["lname"];
+$gender=$_POST["gender"];
+$course=$_POST["course"];
+$address=$_POST["add"];
+$email=$_POST["email"];
+$ccode=$_POST["country code"];
+$number=$_POST["phone"];
+$password=$_POST["pass"];
+echo $firstname."<br>";
+echo $middlename."<br>";
+echo $lastname."<br>";
+echo $gender."<br>";
+echo $course."<br>";
+echo $address.
+</body>
+</html>
